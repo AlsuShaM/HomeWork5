@@ -32,7 +32,7 @@ string PrintGood(int[] numbers)
     return result + "]";
 }
 
-int Multiple(int[] array)
+int EvenNumbers(int[] array)
 {
     int result = 0;
     int size = array.Length;
@@ -45,5 +45,5 @@ int Multiple(int[] array)
 
 int[] array = CreateArray(10);
 Fill(array, 100, 999);
-int result = Multiple(array);
+int result = EvenNumbers(array);
 Console.WriteLine($"{PrintGood(array)} -> {result}");

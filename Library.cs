@@ -84,8 +84,8 @@ public static class Library
     }
     //SelectionSort(array);
 
-    //подсчет четных чисел
-    public static int Multiple(int[] array)
+    //подсчет четных элементов
+    public static int EvenNumbers(int[] array)
     {
         int result = 0;
         int size = array.Length;
@@ -95,7 +95,20 @@ public static class Library
         }
         return result;
     }
-    //int result = Multiple(array);
+    //int result = EvenNumbers(array);
     //Console.WriteLine($"-> {result}");
 
+    //сумма элементов, стоящих на нечётных позициях
+    public static int OddIndex(int[] array)
+    {
+        int result = 0;
+        int size = array.Length;
+        for (int i = 1; i <= size; i = i + 2)
+        {
+            result = result + array[i];
+        }
+        return result;
+    } 
+    //int result = OddIndex(array);
+    //Console.WriteLine($" -> {result}");
 }
