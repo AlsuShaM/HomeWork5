@@ -2,12 +2,13 @@
 //[3, 7, 23, 12] -> 19
 //[-4, -6, 89, 6] -> 0
 
-
+//задать массив
 int[] Array(int count)
     {
      return new int[count];
     }
 
+//заполнить массив
 void Fill(int[] array, int min, int max)
 { 
     int size = array.Length; 
@@ -17,6 +18,7 @@ void Fill(int[] array, int min, int max)
     }
 }
 
+//печать массива
 string PrintGood(int[] numbers)
 {
     int size = numbers.Length;
@@ -31,6 +33,7 @@ string PrintGood(int[] numbers)
     return result + "]";
 }
 
+//подсчет суммы элементов нечетных позиций
 int OddIndex(int[] array)
 {
     int result = 0;
