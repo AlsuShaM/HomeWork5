@@ -111,4 +111,44 @@ public static class Library
     } 
     //int result = OddIndex(array);
     //Console.WriteLine($" -> {result}");
+
+    //задать массив вещественных чисел
+    public static void Fill(double[] array)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = Random.Shared.NextDouble() * 10; //*10 чтобы числы были с двумя знаками после запятой 0,00
+        }
+    }
+    //double[] array = new double[10];
+    //Fill(array);
+
+    //найти макс и мин элемент
+    public static double MinElement(double[] array)
+    {
+        double min = array[0];
+        for (int i = 1; i < array.Length; i++)
+        {
+            if(min > array[i]) min = array[i];
+        }
+        return min;
+    }
+    public static double MaxElement(double[] array)
+    {
+        double max = array[0];
+        for (int i = 1; i < array.Length; i++)
+        {
+            if(max < array[i]) max = array[i];
+        }
+        return max;
+    }
+    //Console.WriteLine($"min = {MinElement(array):F2}");
+    //Console.WriteLine($"max = {MaxElement(array):F2}");
+
+    //найти разницу между макс и мин
+    public static double Diff(double[] array)
+    {
+        return MaxElement(array) - MinElement(array);
+    }
+    //Console.WriteLine($"Разница между max и min элементами -> {Diff(array):F2}");
 }

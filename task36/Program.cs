@@ -2,13 +2,12 @@
 //[3, 7, 23, 12] -> 19
 //[-4, -6, 89, 6] -> 0
 
-//создать массив
+
 int[] Array(int count)
     {
      return new int[count];
     }
 
-//заполнить случайными числами
 void Fill(int[] array, int min, int max)
 { 
     int size = array.Length; 
@@ -32,7 +31,6 @@ string PrintGood(int[] numbers)
     return result + "]";
 }
 
-//найти сумму нечетных позиции
 int OddIndex(int[] array)
 {
     int result = 0;
